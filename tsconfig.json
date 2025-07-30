@@ -1,0 +1,21 @@
+{
+    "include": [
+        "src/**/*"
+    ],
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "baseUrl": "./",
+        "strict": true,
+        "skipLibCheck": true,
+        "paths": {
+            "@strings": [
+                "src\\common\\strings.ts"
+            ]
+        }
+    }
+}
