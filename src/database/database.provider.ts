@@ -6,7 +6,7 @@ export const databaseProvider: FactoryProvider<DataSource> = {
     provide: DATA_SOURCE,
     useFactory: async () => new DataSource({
         type: "mongodb",
-        database: "team_build",
+        database: process.env.MONGO_NAME,
         host: process.env.MONGO_HOST,
         port: parseInt(process.env.MONGO_PORT ?? "27017"),
         entities: [import.meta.dirname + "../**/*.entity.ts"]

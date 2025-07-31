@@ -1,6 +1,9 @@
-export const ORGANIZATION_REPOSITORY: string = "organization_repository";
 export const DATA_SOURCE: string = "data_source";
+export const EMAIL: string = "email";
+export const ORGANIZATION_MEMBER_REPOSITORY: string = "organization_member_repository";
+export const ORGANIZATION_REPOSITORY: string = "organization_repository";
+export const PROJECT_REPOSITORY: string = "project_repository";
 export const TASK_REPOSITORY: string = "task_repository";
+export const TEAM_MEMBER_REPOSITORY: string = "team_member_repository";
 export const TEAM_REPOSITORY: string = "team_repository";
 export const USER_REPOSITORY: string = "user_repository";
-export const EMAIL: string = "email";

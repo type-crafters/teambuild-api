@@ -1,20 +1,20 @@
 import { Column, Entity, ObjectIdColumn } from "typeorm";
 import { ObjectId } from "mongodb";
 
-@Entity("users")
-export class User {
+@Entity("comments")
+export class Comment {
     @ObjectIdColumn()
     public _id?: ObjectId;
 
     @Column()
-    public username?: string;
+    public userId?: ObjectId;
 
     @Column()
-    public email?: string;
+    public taskId?: ObjectId;
 
     @Column()
-    public password?: string;
+    public content?: string;
 
     @Column()
-    public createdAt?: Date;
+    public files?: string[];
 }
